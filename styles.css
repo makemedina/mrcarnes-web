@@ -275,28 +275,34 @@ h2 {
 
 /* Productos */
 
+.categoria-productos {
+  margin-bottom: 32px;
+}
+
+.categoria-productos:last-of-type {
+  margin-bottom: 0;
+}
+
+.categoria-titulo {
+  font-size: 1.1rem;
+  color: var(--terracota-oscuro);
+  margin-bottom: 14px;
+}
+
 .grid-productos {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 14px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
 .producto {
   background: var(--blanco);
-  border-radius: var(--radio);
+  border-radius: 999px;
   box-shadow: var(--sombra);
   border: none;
-  padding: 20px 14px;
-  text-align: center;
+  padding: 10px 20px;
   font-weight: 600;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 8px;
-}
-
-.producto-icono {
-  font-size: 1.6rem;
+  font-size: 0.95rem;
 }
 
 .productos-cta {
@@ -436,10 +442,6 @@ h2 {
 
   .tarjetas-destacadas {
     grid-template-columns: repeat(3, 1fr);
-  }
-
-  .grid-productos {
-    grid-template-columns: repeat(4, 1fr);
   }
 
   .ubicacion-grid {

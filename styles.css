@@ -95,6 +95,19 @@ h2 {
   box-shadow: var(--sombra);
 }
 
+.boton-contorno {
+  background: transparent;
+  color: var(--verde-oscuro);
+  border: 2px solid var(--verde);
+  padding: 0.6em 1.3em;
+  font-size: 0.95rem;
+}
+
+.boton-contorno:hover {
+  background: var(--verde);
+  color: var(--blanco);
+}
+
 .boton-grande {
   padding: 1em 2em;
   font-size: 1.05rem;
@@ -331,6 +344,14 @@ h2 {
 .ubicacion-info p {
   margin: 0 0 4px;
   color: var(--texto-suave);
+}
+
+.ubicacion-botones {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 20px;
 }
 
 .ubicacion-nota {

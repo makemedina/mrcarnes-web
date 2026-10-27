@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Carnes al mayoreo en Culiacán | Mr Carnes — Cerdo, Res y Pollo</title>
 <meta name="description" content="Mr Carnes, comercializadora de carnes al mayoreo en Culiacán, Sinaloa. Cerdo, res y pollo con servicio de reparto. Cotiza por WhatsApp. Desde 2017." />
-<meta name="theme-color" content="#f8f3e6" />
+<meta name="theme-color" content="#ffffff" />
 <link rel="canonical" href="https://mrcarnes.com/" />
 <link rel="icon" type="image/png" href="assets/favicon.png" />
 <meta property="og:type" content="website" />
@@ -50,7 +50,7 @@
 <link rel="preload" as="image" href="assets/logo-completo.webp" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Manrope:wght@400;500;700&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -65,6 +65,7 @@
     <symbol id="i-correo" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></symbol>
     <symbol id="i-ruta" viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></symbol>
     <symbol id="i-estrella" viewBox="0 0 24 24"><path d="m12 3 2.7 5.6 6.1.8-4.5 4.2 1.1 6.1L12 16.8 6.6 19.7l1.1-6.1L3.2 9.4l6.1-.8L12 3z"/></symbol>
+    <symbol id="i-cinco-estrellas" viewBox="0 0 120 24"><use href="#i-estrella" x="0" width="24" height="24"/><use href="#i-estrella" x="24" width="24" height="24"/><use href="#i-estrella" x="48" width="24" height="24"/><use href="#i-estrella" x="72" width="24" height="24"/><use href="#i-estrella" x="96" width="24" height="24"/></symbol>
   </defs>
 </svg>
 
@@ -86,9 +87,10 @@
     <nav class="nav" id="nav" aria-label="Principal">
       <a href="#nosotros">Nosotros</a>
       <a href="#productos">Productos</a>
+      <a href="#resenas">Reseñas</a>
       <a href="#ubicacion">Ubicación</a>
       <a href="#contacto">Contacto</a>
-      <a href="https://wa.me/526671591730?text=Hola%2C%20quiero%20cotizar%20productos%20de%20Mr%20Carnes" target="_blank" rel="noopener" class="boton boton-whatsapp nav-cta">Cotiza por WhatsApp</a>
+      <a href="https://wa.me/526671591730?text=Hola%2C%20quiero%20cotizar%20productos%20de%20Mr%20Carnes" target="_blank" rel="noopener" class="boton boton-primario nav-cta">Cotiza por WhatsApp</a>
     </nav>
   </div>
 </header>
@@ -96,21 +98,24 @@
 <main id="contenido">
 
   <section id="inicio" class="hero">
+    <div class="confeti confeti-movil" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span></div>
+    <div class="confeti confeti-escritorio" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
     <div class="contenedor hero-interior">
       <div class="hero-texto">
-        <p class="hero-tagline">Excelente servicio en carnes desde 2017</p>
         <h1>Comercializadora de carnes en Culiacán</h1>
         <p class="hero-descripcion">Cortes y productos cárnicos al mayoreo en Culiacán, Sinaloa, con servicio de reparto. Cotiza tu pedido directo por WhatsApp.</p>
         <div class="hero-botones">
-          <a href="https://wa.me/526671591730?text=Hola%2C%20quiero%20cotizar%20productos%20de%20Mr%20Carnes" target="_blank" rel="noopener" class="boton boton-whatsapp">
+          <a href="https://wa.me/526671591730?text=Hola%2C%20quiero%20cotizar%20productos%20de%20Mr%20Carnes" target="_blank" rel="noopener" class="boton boton-primario">
             <svg width="20" height="20" fill="currentColor" aria-hidden="true"><use href="#i-wa"/></svg>Cotiza por WhatsApp
           </a>
           <a href="#productos" class="boton boton-secundario">Ver productos</a>
         </div>
         <p class="estado-horario" id="estadoHorario" hidden><span class="punto" aria-hidden="true"></span><span id="estadoTexto"></span></p>
       </div>
-      <div class="hero-logo-card">
-        <img src="assets/logo-completo.webp" alt="Mr Carnes — Comercializadora de Carnes. Excelente servicio en carnes desde 2017" width="760" height="695" />
+      <div class="hero-logo">
+        <div class="hero-logo-card">
+          <img src="assets/logo-completo.webp" alt="Mr Carnes — Comercializadora de Carnes. Excelente servicio en carnes desde 2017" width="760" height="695" />
+        </div>
       </div>
     </div>
   </section>
@@ -118,7 +123,6 @@
   <section id="nosotros" class="seccion">
     <div class="contenedor nosotros-grid">
       <div class="nosotros-texto">
-        <p class="etiqueta">Quiénes somos</p>
         <h2>Sobre nosotros</h2>
         <p class="seccion-texto">
           En Mr Carnes somos una comercializadora de carnes en Culiacán, Sinaloa, con
@@ -146,52 +150,74 @@
 
   <section id="productos" class="seccion seccion-alterna">
     <div class="contenedor">
-      <div class="seccion-cabecera">
-        <p class="etiqueta">Catálogo</p>
-        <h2>Nuestros productos</h2>
+      <div class="seccion-cabecera seccion-cabecera-centro">
+        <h2>Nuestros <span class="subrayado">productos</span></h2>
         <p class="seccion-texto">
           Manejamos estos cortes y productos. Los precios varían según cantidad y
           condiciones de venta — cotiza el que necesites directo por WhatsApp.
         </p>
       </div>
       <div class="catalogo">
-        <article class="categoria">
+        <article class="categoria categoria-cerdo">
           <header class="categoria-cab"><h3>Cerdo</h3><span class="cuenta"></span></header>
-          <!-- Lista editable: agrega o quita un <li> por cada corte. El contador se actualiza solo. -->
-          <ul class="chips">
-            <li>Pierna</li>
-            <li>Espaldilla</li>
-            <li>Cabeza de lomo</li>
-            <li>Entrecot</li>
-            <li>Cabezas</li>
-            <li>Manitas</li>
-            <li>Tripa de leche</li>
-            <li>Buche</li>
-            <li>Esófago</li>
-            <li>Recorte 80/20</li>
-            <li>Recorte de tocino</li>
-            <li>Recorte 50/50</li>
-            <li>Grasa</li>
-            <li>Cuero</li>
-            <li>Unto</li>
-            <li>Shoulder spare rib</li>
-            <li>Costilla cargada</li>
-            <li>Back rib</li>
-            <li>Manteca</li>
-          </ul>
+          <!-- Lista editable: agrega o quita un <li> dentro del grupo que corresponda. El contador se actualiza solo. -->
+          <div class="subgrupo">
+            <h4>Cortes</h4>
+            <ul class="chips">
+              <li>Pierna</li>
+              <li>Espaldilla</li>
+              <li>Cabeza de lomo</li>
+              <li>Entrecot</li>
+            </ul>
+          </div>
+          <div class="subgrupo">
+            <h4>Costillas</h4>
+            <ul class="chips">
+              <li>Shoulder spare rib</li>
+              <li>Costilla cargada</li>
+              <li>Back rib</li>
+            </ul>
+          </div>
+          <div class="subgrupo">
+            <h4>Recortes</h4>
+            <ul class="chips">
+              <li>Recorte 80/20</li>
+              <li>Recorte 50/50</li>
+              <li>Recorte de tocino</li>
+            </ul>
+          </div>
+          <div class="subgrupo">
+            <h4>Grasas y cuero</h4>
+            <ul class="chips">
+              <li>Grasa</li>
+              <li>Unto</li>
+              <li>Manteca</li>
+              <li>Cuero</li>
+            </ul>
+          </div>
+          <div class="subgrupo">
+            <h4>Cabezas y menudencias</h4>
+            <ul class="chips">
+              <li>Cabezas</li>
+              <li>Manitas</li>
+              <li>Tripa de leche</li>
+              <li>Buche</li>
+              <li>Esófago</li>
+            </ul>
+          </div>
         </article>
         <div class="categoria-lado">
-          <article class="categoria">
+          <article class="categoria categoria-res">
             <header class="categoria-cab"><h3>Res</h3><span class="cuenta"></span></header>
-            <ul class="chips">
+            <ul class="chips chips-solo">
               <li>Olan</li>
               <li>Cuajo</li>
               <li>Tripa</li>
             </ul>
           </article>
-          <article class="categoria">
+          <article class="categoria categoria-pollo">
             <header class="categoria-cab"><h3>Pollo</h3><span class="cuenta"></span></header>
-            <ul class="chips">
+            <ul class="chips chips-solo">
               <li>Pechuga</li>
               <li>Alitas</li>
               <li>Boneless</li>
@@ -200,9 +226,52 @@
         </div>
       </div>
       <div class="productos-cta">
-        <a href="https://wa.me/526671591730?text=Hola%2C%20quiero%20cotizar%20productos%20de%20Mr%20Carnes" target="_blank" rel="noopener" class="boton boton-whatsapp">
+        <a href="https://wa.me/526671591730?text=Hola%2C%20quiero%20cotizar%20productos%20de%20Mr%20Carnes" target="_blank" rel="noopener" class="boton boton-primario">
           <svg width="20" height="20" fill="currentColor" aria-hidden="true"><use href="#i-wa"/></svg>Cotiza por WhatsApp
         </a>
+      </div>
+    </div>
+  </section>
+
+  <section id="resenas" class="seccion seccion-resenas">
+    <div class="contenedor">
+      <!-- Reseñas copiadas de la ficha de Google Maps el 27 de octubre de 2026 (solo se ven 3 sin iniciar sesión). Para sumar otra, duplica un <figure class="resena">. Actualiza la calificación y el total de opiniones cuando cambien. -->
+      <div class="resenas-cabecera">
+        <h2>Lo que dicen nuestros clientes</h2>
+        <p class="resenas-resumen">
+          <svg class="estrellas" width="90" height="18" fill="currentColor" role="img" aria-label="5 de 5 estrellas"><use href="#i-cinco-estrellas"/></svg>
+          <span><strong>5.0</strong> en Google (15 opiniones)</span>
+        </p>
+      </div>
+      <div class="resenas-grid">
+        <figure class="resena">
+          <svg class="estrellas" width="90" height="18" fill="currentColor" role="img" aria-label="5 de 5 estrellas"><use href="#i-cinco-estrellas"/></svg>
+          <blockquote><p>Excelente atención y muy buena calidad en sus productos.</p></blockquote>
+          <figcaption>
+            <span class="resena-inicial" aria-hidden="true">C</span>
+            <span><span class="resena-nombre">Carlos B.</span><span class="resena-fuente">Reseña en Google</span></span>
+          </figcaption>
+        </figure>
+        <figure class="resena">
+          <svg class="estrellas" width="90" height="18" fill="currentColor" role="img" aria-label="5 de 5 estrellas"><use href="#i-cinco-estrellas"/></svg>
+          <blockquote><p>Excelente servicio y calidad. 👌</p></blockquote>
+          <figcaption>
+            <span class="resena-inicial" aria-hidden="true">J</span>
+            <span><span class="resena-nombre">Juan Carlos R.</span><span class="resena-fuente">Reseña en Google</span></span>
+          </figcaption>
+        </figure>
+        <figure class="resena">
+          <svg class="estrellas" width="90" height="18" fill="currentColor" role="img" aria-label="5 de 5 estrellas"><use href="#i-cinco-estrellas"/></svg>
+          <blockquote><p>Todo al 100, muy buena atención y excelente producto</p></blockquote>
+          <figcaption>
+            <span class="resena-inicial" aria-hidden="true">J</span>
+            <span><span class="resena-nombre">Javo R.</span><span class="resena-fuente">Reseña en Google</span></span>
+          </figcaption>
+        </figure>
+      </div>
+      <div class="resenas-cta">
+        <a href="https://www.google.com/maps/place/?q=place_id:ChIJV40PADTRvIYRp5NQW2xfBAs" target="_blank" rel="noopener" class="boton boton-secundario">Ver las reseñas en Google</a>
+        <a href="https://g.page/r/CaeTUFtsXwQLECE/review" target="_blank" rel="noopener" class="boton boton-primario">Déjanos tu reseña</a>
       </div>
     </div>
   </section>
@@ -210,7 +279,6 @@
   <section id="ubicacion" class="seccion">
     <div class="contenedor">
       <div class="seccion-cabecera">
-        <p class="etiqueta">Visítanos</p>
         <h2>Horario y ubicación</h2>
       </div>
       <div class="ubicacion-grid">
@@ -249,17 +317,16 @@
   <section id="contacto" class="seccion seccion-contacto">
     <div class="contenedor">
       <div class="cta-card">
-        <p class="etiqueta etiqueta-clara">Contacto</p>
         <h2>¿Tienes un pedido o quieres cotizar?</h2>
         <p class="cta-texto">Escríbenos por WhatsApp, correo o llámanos directamente.</p>
         <div class="contacto-botones">
-          <a href="https://wa.me/526671591730?text=Hola%2C%20quiero%20cotizar%20productos%20de%20Mr%20Carnes" target="_blank" rel="noopener" class="boton boton-whatsapp boton-grande">
+          <a href="https://wa.me/526671591730?text=Hola%2C%20quiero%20cotizar%20productos%20de%20Mr%20Carnes" target="_blank" rel="noopener" class="boton boton-primario boton-grande">
             <svg width="22" height="22" fill="currentColor" aria-hidden="true"><use href="#i-wa"/></svg>WhatsApp: 667 159 1730
           </a>
-          <a href="tel:+526671591730" class="boton boton-claro boton-grande">
+          <a href="tel:+526671591730" class="boton boton-contorno boton-grande">
             <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#i-telefono"/></svg>Llamar
           </a>
-          <a href="mailto:contacto@mrcarnes.com" class="boton boton-claro boton-grande">
+          <a href="mailto:contacto@mrcarnes.com" class="boton boton-contorno boton-grande">
             <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#i-correo"/></svg>contacto@mrcarnes.com
           </a>
         </div>
